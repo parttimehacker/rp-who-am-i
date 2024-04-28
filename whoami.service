@@ -1,0 +1,8 @@
+[Unit]
+Description=Do It Yourself Home Automation Asset Monitor
+After=multi-user.target
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /usr/local/whoami/whoami.py --a opencv
+[Install]
+WantedBy=multi-user.target
